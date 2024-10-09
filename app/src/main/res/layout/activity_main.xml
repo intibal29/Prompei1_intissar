@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="342dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="80dp"
+        android:text="@string/introduce_tu_dni"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/DNI"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="74dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/numero_dni"
+        android:inputType="text"
+        android:textColorHint="#546E7A"
+        app:layout_constraintBottom_toTopOf="@+id/buttonValidar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/letra"
+        android:layout_width="147dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/letra"
+        android:inputType="text"
+        android:textColorHint="#546E7A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/DNI"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonValidar"
+        android:layout_width="192dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="380dp"
+        android:text="@string/validar_dni"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/letra" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

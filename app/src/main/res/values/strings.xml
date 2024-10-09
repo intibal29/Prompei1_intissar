@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="numero_dni">Numero DNI</string>
+    <string name="validar_dni">VALIDAR DNI</string>
+    <string name="letra">Letra</string>
+    <string name="introduce_tu_dni">INTRODUCE TU DNI:</string>
+</resources>
